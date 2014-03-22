@@ -109,11 +109,26 @@
     <Compile Include="DetailViewController.designer.cs">
       <DependentUpon>DetailViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\SpartaQuiz.Core\QandAStore.cs">
-      <Link>SpartaQuiz.Core\QandAStore.cs</Link>
+    <Compile Include="..\SpartaQuiz.Core\CheckQuestionResult.cs">
+      <Link>SpartaQuiz.Core\CheckQuestionResult.cs</Link>
     </Compile>
-    <Compile Include="..\SpartaQuiz.Core\ScoreManager.cs">
-      <Link>SpartaQuiz.Core\ScoreManager.cs</Link>
+    <Compile Include="..\SpartaQuiz.Core\Game.cs">
+      <Link>SpartaQuiz.Core\Game.cs</Link>
+    </Compile>
+    <Compile Include="..\SpartaQuiz.Core\GameSession.cs">
+      <Link>SpartaQuiz.Core\GameSession.cs</Link>
+    </Compile>
+    <Compile Include="..\SpartaQuiz.Core\IGame.cs">
+      <Link>SpartaQuiz.Core\IGame.cs</Link>
+    </Compile>
+    <Compile Include="..\SpartaQuiz.Core\IGameServer.cs">
+      <Link>SpartaQuiz.Core\IGameServer.cs</Link>
+    </Compile>
+    <Compile Include="..\SpartaQuiz.Core\QuestionItem.cs">
+      <Link>SpartaQuiz.Core\QuestionItem.cs</Link>
+    </Compile>
+    <Compile Include="..\SpartaQuiz.Core\QuestionRepository.cs">
+      <Link>SpartaQuiz.Core\QuestionRepository.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

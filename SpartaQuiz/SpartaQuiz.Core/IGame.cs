@@ -4,49 +4,19 @@ using System.Text;
 
 namespace SpartaQuiz.Core
 {
-    interface IGame
-    {
-        string PlayerName { get; }
-        int Score { get; }
+	interface IGame
+	{
+		string PlayerName { get; }
 
-        QuestionItem GetCurrentQuestion();
-        bool CheckAnswert(int answert);
-    }
+		int Score { get; }
 
-    public class Game : IGame
-    {
-        private readonly QuestionRepository _repository;
-        private QuestionItem _current;
+		bool GameOver
+		{
+			get;
+		}
 
-        public string PlayerName { get; private set; }
-        public int Score { get; private set; }
-        public bool GameOver { get; private set; }
+		QuestionItem GetCurrentQuestion();
 
-        public Game(string playerName)
-        {
-            PlayerName = playerName;
-            _repository = new QuestionRepository();
-            _current = _repository.GetAQuestion();
-        }
-
-        public QuestionItem GetCurrentQuestion()
-        {
-            return _current;
-        }
-
-        public bool CheckAnswert(int answer)
-        {
-            if (_current.RightAnswer == answer)
-            {
-                _current = _repository.GetAQuestion();
-                return true;
-            }
-            else
-            {
-                GameOver = true;
-                _current = null;
-                return false;
-            }
-        }
-    }
+		bool CheckAnswert( int answert );
+	}
 }
