@@ -2,11 +2,10 @@
 
 namespace SpartaQuiz.Core
 {
-	public class MyClass
+	public class ScoreManager
 	{
-		public MyClass()
+		public ScoreManager()
 		{
 		}
 	}
 }
-
