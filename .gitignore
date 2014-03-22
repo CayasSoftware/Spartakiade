@@ -6,6 +6,7 @@
 *.user
 *.sln.docstates
 Resource.designer.cs
+*.userprefs
 
 # Build results
 
