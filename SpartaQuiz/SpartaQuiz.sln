@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-VisualStudioVersion = {0}
-MinimumVisualStudioVersion = {0}
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpartaQuiz.Droid", "SpartaQuiz.Droid\SpartaQuiz.Droid.csproj", "{5825BA6F-F85E-4038-BC05-A66718EA2111}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpartaQuiz.iOS", "SpartaQuiz.iOS\SpartaQuiz.iOS.csproj", "{4918BFB2-17B8-4523-9985-21618E972815}"
