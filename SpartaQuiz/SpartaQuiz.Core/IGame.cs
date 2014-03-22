@@ -17,6 +17,6 @@ namespace SpartaQuiz.Core
 
 		QuestionItem GetCurrentQuestion();
 
-		bool CheckAnswert( int answert );
+		bool CheckAnswer( int answert );
 	}
 }

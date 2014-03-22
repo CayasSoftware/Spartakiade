@@ -25,7 +25,7 @@ namespace SpartaQuiz.Core
 			return _current;
 		}
 
-		public bool CheckAnswert( int answer )
+		public bool CheckAnswer( int answer )
 		{
 			if(_current.RightAnswer == answer)
 			{

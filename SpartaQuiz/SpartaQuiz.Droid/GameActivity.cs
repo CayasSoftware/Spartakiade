@@ -38,12 +38,16 @@ namespace SpartaQuiz.Droid
 			btnAnswer2 = FindViewById<Button>(Resource.Id.GameBtnAnswer2);
 			btnAnswer3 = FindViewById<Button>(Resource.Id.GameBtnAnswer3);
 			btnAnswer4 = FindViewById<Button>(Resource.Id.GameBtnAnswer4);
-			btnAnswer1.Click += BtnAnser_Click;
+
+            btnAnswer1.Click += (sender, args) => CheckAnswer(0);
+            btnAnswer2.Click += (sender, args) => CheckAnswer(1);
+            btnAnswer3.Click += (sender, args) => CheckAnswer(2);
+            btnAnswer4.Click += (sender, args) => CheckAnswer(3);
 
 			SetQuestionViews(game.GetCurrentQuestion());
 		}
 
-		void SetQuestionViews( Core.QuestionItem questionItem )
+	    void SetQuestionViews( Core.QuestionItem questionItem )
 		{
 			question.Text = questionItem.Question;
 			btnAnswer1.Text = questionItem.Answers[0];
@@ -52,12 +56,19 @@ namespace SpartaQuiz.Droid
 			btnAnswer4.Text = questionItem.Answers[3];
 		}
 
-		void BtnAnser_Click( object sender, EventArgs e )
-		{
-			//todo: Antwortauswertung
-
-			SetQuestionViews(game.GetCurrentQuestion());
-		}
+        private void CheckAnswer(int answer)
+        {
+            if (game.CheckAnswer(answer))
+            {
+                SetQuestionViews(game.GetCurrentQuestion());
+            }
+            else
+            {
+                Toast.MakeText(this, "Sorry Game Over!", ToastLength.Long).Show();
+                Finish();
+                return;
+            }
+        }
 	}
 }
 
