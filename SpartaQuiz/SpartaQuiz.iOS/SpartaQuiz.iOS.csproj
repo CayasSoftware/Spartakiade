@@ -130,10 +130,21 @@
     <Compile Include="..\SpartaQuiz.Core\QuestionRepository.cs">
       <Link>SpartaQuiz.Core\QuestionRepository.cs</Link>
     </Compile>
+    <Compile Include="GameController.cs" />
+    <Compile Include="GameController.designer.cs">
+      <DependentUpon>GameController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameStartController.cs" />
+    <Compile Include="PlayGameController.cs" />
+    <Compile Include="PlayGameController.designer.cs">
+      <DependentUpon>PlayGameController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MasterViewController.xib" />
     <InterfaceDefinition Include="DetailViewController.xib" />
+    <InterfaceDefinition Include="GameController.xib" />
+    <InterfaceDefinition Include="PlayGameController.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>

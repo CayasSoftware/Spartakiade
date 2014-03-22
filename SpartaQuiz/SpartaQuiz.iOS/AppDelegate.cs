@@ -26,7 +26,7 @@ namespace SpartaQuiz.iOS
 		{
 			window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-			var controller = new MasterViewController();
+			var controller = new GameStartController();
 			navigationController = new UINavigationController(controller);
 			window.RootViewController = navigationController;
 
